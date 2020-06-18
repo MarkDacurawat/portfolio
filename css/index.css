@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+    font-family: "montserrat" sans-serif;
+}
+header{
+    background-color:transparent;
+	box-shadow:0 2px 5px white;
+    height:60px;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+	transition:all .3s;
+}
+header.sticky{
+  background-color:black;
+  height:70px;
+}
+.logo{
+    color: white;
+    font-size: 1.7rem;
+    font-weight: bold;
+    line-height: 75px;
+    margin: 0 20px;
+    float: left;
+}
+header input[type="checkbox"]{
+    display: none;
+}
+.toggle{
+    color: white;
+    float: right;
+    font-size: 2.5rem;
+    line-height: 75px;
+    margin-right: 20px;
+    display: none;
+}
+nav ul{
+    float: right;
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 75px;
+}
+nav ul li a{
+    color: white;
+    font-size: 0.8rem;
+    padding: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s;
+}
+nav ul li a:hover{
+    background-color: white;
+    color: black;
+}
+nav ul li a i{
+  font-size:1rem;
+  padding:10px;
+}
+
+#first-page{
+    width: 100%;
+    background-image:url('../img/plantblack.jpg');
+    background-size:cover;
+	  background-position:center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	text-align:center;
+}
+.first-content{
+    color: white;
+}
+.first-content h1{
+    padding:10px;
+    font-size: 2rem;
+}
+.first-content p{
+   margin-bottom:30px;
+}
+.first-content a{
+   padding:15px;
+   color:White;
+   border-radius:10px;
+   border:solid 2px BurlyWood;
+   transition: background-color .2s ease;
+}
+.first-content a:hover{
+   background-color:BurlyWood;
+}
+/* Media query Of First Page */
+
+
+
+
+#second-page{
+  width:100%;
+  height:30vh;
+}
+#second-page .slide{
+  width:100%;
+  display:flex;
+ /* align-items:center;*/
+  justify-content:center;
+}
+.slide img{
+  width:250px;
+  height:100%;
+}
+.slide button{
+  background-color:#333;
+  color:White;
+  padding:10px;
+  border:none;
+  font-size:20px;
+  outline:none;
+  cursor: pointer;
+}
+
+#third-page{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+}
+#third-page .mypic{
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+#third-page .mypic h1{
+  font-size: 1.5em;
+  text-transform: uppercase;
+  padding: 10px;
+}
+#third-page .aboutme{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+#third-page img{
+  width: 100%;
+}
+#fourt-page{
+  width: 100%;
+  /* height: 100vh; */
+  background-image:linear-gradient(#e83030,black);
+}
+#fourt-page .courses img{
+  width: 50%;
+  align-self: center;
+  justify-self: center;
+  padding: 10px;
+  cursor: pointer;
+  transition: .7s all ease;
+}
+#fourt-page .courses img:hover{
+  transform: rotate(360deg);
+}
+#fourt-page .courses{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+}
+
+footer{
+  background-color: #333;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .social-icon span{
+  font-size: 2em;
+  padding: 15px;
+  cursor: pointer;
+}
+footer .emails input{
+  background-color: red;
+  border: solid 1px black;
+  outline: none;
+  padding: 3px;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}
+footer .social-icon span a{
+  color: violet;
+}
+footer .social-icon span i{
+  transition: .3s all ease;
+}
+footer .social-icon span i:hover{
+  transform: translateY(-8px);
+}
+
+
+@media screen and (max-width:552px){
+    .logo{
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width:635px){
+    .toggle{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        background-color:rgba(0,0,0,.9);
+        width: 100%;
+        height: 100vh;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: .5s;
+    }
+	header.sticky nav ul{
+	  top:70px;
+	}
+    nav ul li{
+        display: block;
+        padding: 20px;
+    }
+    nav ul li a{
+        padding:15px 30px;
+        font-size: 1.3rem;
+    }
+	nav ul li a i{
+        font-size:1.3rem;
+        padding:10px;
+    }
+    #check:checked ~ nav ul{
+        left: 0;
+    }
+    #second-page{
+        width: 200px;
+    }
+}
+@media screen and (max-width:1200px){
+    #second-page{
+        width:100%;
+        height:40vh;
+        background-color:#70592d;
+        display: flex;
+        padding: 20px;
+      }
+      #second-page .slide{
+        width:100%;
+      }
+      .slide img{
+        width:300px;
+        height:100%;
+        border: solid 1px white;
+      }
+      .slide button{
+        background-color:#333;
+        color:White;
+        padding:10px;
+        border:none;
+        font-size:20px;
+        outline:none;
+        border: solid 1px white;
+      }
+
+      /* THIRD PAGE CSS FULL SCREEN */
+}

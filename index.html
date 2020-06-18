@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <link rel="stylesheet" href="./css/index.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+     
+        <input type="checkbox" name="check" id="check">
+	  <label for="check" class="toggle"><i class="fa fa-bars"></i></label>
+        <div class="logo">MarKramdoid</div>
+    <nav>
+        <ul>
+		  <li><a href="#"><i class="fa fa-home"></i>Home</a></li>
+		  <li><a href="#"><i class="fa fa-question"></i>About</a></li>
+		  <li><a href="#"><i class="fa fa-phone"></i>Contact</a></li>
+		  <li><a href="#"><i class="fa fa-database"></i>Github</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="first-page">
+  <div class="first-content">
+  <h1>Hi! I'am Mark Dacurawat</h1>
+  <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using </p>
+  <a href="#">Learn More</a>
+</div>
+</section>
+
+  <section id="second-page">
+	<div class="slide">
+	  <button class="prev" id="prev" onclick="prev()"><i class="fa fa-chevron-left"></i></button>
+	  <div class="slideimg">
+	  <img src="./course/responsive.jpg" id="imgslide">
+	  </div>
+	  <button class="next" id="next" onclick="next()"><i class="fa fa-chevron-right"></i></button>
+	</div>
+  </section>
+  
+  <section id="third-page">
+	<div class="mypic">
+	  <h1>About Me</h1>
+	  <img src="./img/me.png" alt="myprofile">
+	</div>
+	
+	<div class="aboutme">
+	  <p>It is a long established fact 
+		that a reader will be distracted by the readable content of a page when looking at its layout. The point of usingIt is a long established fact 
+		that a reader will be distracted by the readable content of a page when looking at its layout. The point of using </p>
+	</div>
+</section>
+
+
+<section id="fourt-page">
+    <div class="courses">
+		<img src="./crs/html5.png" alt="">
+		<img src="./crs/css.png" alt="">
+		<img src="./crs/javascript.png" alt="">
+		<img src="./crs/bootstrap.png" alt="">
+		<img src="./crs/php.png" alt="">
+		<img src="./crs/mysql.png" alt="">
+	</div>
+</section>
+  
+
+<footer>
+	<div class="emails">
+	  <input type="text" name="" id="email" value="markmarkifffff@gmail.com"><br>
+	  <input type="text" name="" id="contact" value="09755041958">
+	</div>
+
+	<div class="social-icon">
+		<span><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></span>
+		<span><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></span>
+		<span><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></span>
+		<span><a href="#"><i class="fa fa-youtube-square" aria-hidden="true"></i></a></span>
+		<span><a href="#"><i class="fa fa-github-square" aria-hidden="true"></i></a></span>
+	  </div>
+</footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
